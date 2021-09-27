@@ -7,7 +7,7 @@ app.all('/', (_, res) => {
 });
 
 app.get('/crash', (req, res) => {
-  null.thisdoesntexist();
+  process.exit(-1);
 });
 
 app.listen(7000, () => {
